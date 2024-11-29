@@ -23,6 +23,10 @@ This Application collects your device's location, which helps the Service Provid
 *   Analytics and Improvements: Aggregated and anonymized location data helps the Service Provider to analyze user behavior, identify trends, and improve the overall performance and functionality of the Application.
 *   Third-Party Services: Periodically, the Service Provider may transmit anonymized location data to external services. These services assist them in enhancing the Application and optimizing their offerings.
 
+**Does the Application collect images from the camera?**
+Yes the Application collects images from the camera. The images are used to detect text in the image stream and provide information about them.
+It doesn't store the images or any information's about them on any server and are removed from the device as soon as the application is closed.
+
 **Do third parties see and/or have access to information obtained by the Application?**
 
 Only aggregated, anonymized data is periodically transmitted to external services to aid the Service Provider in improving the Application and their service. The Service Provider may share your information with third parties in the ways that are described in this privacy statement.
