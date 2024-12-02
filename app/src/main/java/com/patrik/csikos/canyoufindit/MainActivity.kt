@@ -18,7 +18,6 @@ class MainActivity : ComponentActivity() {
             CanYouFindItTheme() {
                 Scaffold(modifier = Modifier.fillMaxSize()) { innerPadding ->
                     CameraViewScreen(
-                        name = "Android",
                         modifier = Modifier.padding(innerPadding)
                     )
                 }

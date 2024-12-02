@@ -35,7 +35,7 @@ import java.util.concurrent.Executors
 
 @OptIn(ExperimentalPermissionsApi::class)
 @Composable
-fun CameraViewScreen(name: String, modifier: Modifier = Modifier) {
+fun CameraViewScreen(modifier: Modifier = Modifier) {
     val cameraPermissionState = rememberPermissionState(Manifest.permission.CAMERA)
     val snackbarHostState = remember { SnackbarHostState() }
 
@@ -88,7 +88,7 @@ fun CameraViewScreen(name: String, modifier: Modifier = Modifier) {
                                 onSuccess = { text ->
                                     // Handle the successful text recognition result
                                     val intent = Intent(Intent.ACTION_VIEW, Uri.parse("https://www.youtube.com/watch?v=dQw4w9WgXcQ/"))
-                                    if(text.text.contains("Hello World")) {
+                                    if(text.text.contains("Hello World", ignoreCase = true)) {
                                         context.startActivity(intent)
                                     }
                                     else {
